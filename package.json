@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.6",
+    "@tailwindcss/vite": "^4.1.5"
+  },
+  "devDependencies": {
+    "init": "^0.1.2",
+    "npx": "^10.2.2",
+    "tailwindcss": "^4.1.6"
+  }
+}
