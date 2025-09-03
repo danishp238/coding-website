@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Web Dev Tutorials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .glass-card {
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+
+        .neon-text {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 30px rgba(255, 255, 255, 0.2);
+        }
+
+        .form-input {
+            backdrop-filter: blur(10px) saturate(180%);
+            -webkit-backdrop-filter: blur(10px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form-input:focus {
+            outline: none;
+            backdrop-filter: blur(12px) saturate(180%);
+            -webkit-backdrop-filter: blur(12px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .contact-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(138, 43, 226, 0.4),
+                0 10px 10px -5px rgba(233, 30, 99, 0.3);
+        }
+
+        .copy-btn {
+            transition: all 0.2s ease;
+        }
+
+        .copy-btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .copy-btn.copied {
+            background-color: rgba(104, 211, 145, 0.3);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white">
+    <!-- Navigation -->
+    <header>
+        <nav class="flex items-center justify-between animate-slide-up animate-delay">
+            <div class="w-20 relative left-5 sm:left-5 sm:w-32">
+                <a href="index.html">
+                    <img src="images/logo.jpeg"
+                        class="cursor-pointer mt-4 rounded-full hover:scale-110 transition duration-150 ease-in-out"
+                        alt="Logo">
+                </a>
+            </div>
+            <div class="flex justify-between w-48 sm:w-60 relative right-6 sm:right-12">
+                <a href="about-us.html">
+                    <p class="cursor-pointer">About Us</p>
+                </a>
+                <a href="contact-us.html">
+                    <p class="cursor-pointer">Contact</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-12">
+        <div class="text-center max-w-2xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h1>
+            <p class="text-xl opacity-90">
+                Have questions, suggestions, or need help with a tutorial? Reach out to me directly through any of these
+                channels.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Cards -->
+    <section class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Discord Card -->
+            <div class="glass-card contact-card p-6 rounded-2xl">
+                <div class="flex items-center mb-5">
+                    <div class="w-12 h-12 rounded-full bg-indigo-600 flex items-center justify-center mr-4">
+                        <i class="fab fa-discord text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold">Discord</h3>
+                </div>
+                <p class="mb-5 opacity-90">Join our community or message me directly on Discord for quick responses and
+                    developer discussions.</p>
+                <div class="flex items-center justify-between glass-card py-2 px-4 rounded-lg">
+                    <span class="font-mono">professional_gamer20</span>
+                    <button class="copy-btn glass-card py-1 px-3 rounded text-sm" data-value="professional_gamer20">
+                        Copy
+                    </button>
+                </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="glass-card contact-card p-6 rounded-2xl">
+                <div class="flex items-center mb-5">
+                    <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-4">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold">Email</h3>
+                </div>
+                <p class="mb-5 opacity-90">Send me an email for more detailed inquiries, collaboration proposals, or
+                    longer explanations.</p>
+                <div class="flex items-center justify-between glass-card py-2 px-4 rounded-lg">
+                    <span class="font-mono text-sm truncate">nickthegamer09@proton.me</span>
+                    <button class="copy-btn glass-card py-1 px-3 rounded text-sm" data-value="nickthegamer09@proton.me">
+                        Copy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+   
+
+    <!-- FAQ Section -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div class="glass-card p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                    <i class="fas fa-question-circle text-purple-300 mr-3"></i>
+                    How quickly do you respond?
+                </h3>
+                <p class="opacity-90">I typically respond to messages within 24 hours. Discord messages usually get
+                    faster responses during evening hours (EST).</p>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                    <i class="fas fa-question-circle text-purple-300 mr-3"></i>
+                    Can I request a tutorial?
+                </h3>
+                <p class="opacity-90">Absolutely! I'm always looking for new tutorial ideas. Message me with your
+                    suggestion and I'll consider it for future content.</p>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                    <i class="fas fa-question-circle text-purple-300 mr-3"></i>
+                    Do you offer mentoring?
+                </h3>
+                <p class="opacity-90">I occasionally take on mentoring students. Contact me with your goals and current
+                    skill level, and we can discuss options.</p>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-3 flex items-center">
+                    <i class="fas fa-question-circle text-purple-300 mr-3"></i>
+                    Are you available for freelance work?
+                </h3>
+                <p class="opacity-90">Yes, I take on select freelance projects. Reach out with your project details and
+                    timeline for a quote.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   
+
+    <script>
+        // Copy functionality
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const value = this.getAttribute('data-value');
+                navigator.clipboard.writeText(value).then(() => {
+                    // Visual feedback that text was copied
+                    const originalText = this.textContent;
+                    this.textContent = 'Copied!';
+                    this.classList.add('copied');
+
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.classList.remove('copied');
+                    }, 2000);
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            });
+        });
+
+        // Simple form validation (can be expanded)
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Get form values
+            const name = form.querySelector('input[type="text"]').value;
+            const email = form.querySelector('input[type="email"]').value;
+            const subject = form.querySelectorAll('input[type="text"]')[1].value;
+            const message = form.querySelector('textarea').value;
+
+            // Simple validation
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            // In a real application, you would send this data to a server
+            alert('Thanks for your message! I\'ll get back to you soon.');
+            form.reset();
+        });
+    </script>
+</body>
+
+</html>

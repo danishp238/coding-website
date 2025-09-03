@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Web Dev Tutorials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .glass-card {
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+        }
+        .neon-text {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+                         0 0 20px rgba(255, 255, 255, 0.3),
+                         0 0 30px rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white">
+    <!-- Navigation -->
+    <!-- <nav class="glass-card mx-4 lg:mx-20 mt-4 rounded-full">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold neon-text">WebDevTuts</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-purple-200 transition">Home</a>
+                <a href="#" class="hover:text-purple-200 transition">Tutorials</a>
+                <a href="#" class="font-bold text-purple-200">About</a>
+                <a href="#" class="hover:text-purple-200 transition">Contact</a>
+            </div>
+            <button class="md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav> -->
+
+    <!-- Hero Section -->
+
+    <!-- header -->
+
+    <header>
+        <nav class="flex items-center justify-between animate-slide-up animate-delay">
+            <div class="w-20 relative left-5 sm:left-5 sm:w-32">
+            <a href="index.html">
+                <img src="images/logo.jpeg" class="cursor-pointer mt-4 rounded-full hover:scale-110 transition duration-150 ease-in-out" alt="Logo">
+            </a>
+        </div>
+        <div class="flex justify-between w-48 sm:w-60 relative right-6 sm:right-12">
+            <a href="#">
+                <p class="cursor-pointer">About Us</p>
+            </a>
+            <a href="#">
+                <p class="cursor-pointer">Contact</p>
+            </a>
+        </div>
+        </nav>
+    </header>
+
+
+    <section class="container mx-auto px-4 py-12 md:py-24">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Hello, I'm <span class="text-purple-200">Danny</span><br>
+                    A Solo Developer
+                </h1>
+                <p class="text-xl mb-8 opacity-90">
+                    Teaching web development through interactive tutorials and real-world projects.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="index.html" class="glass-card px-6 py-3 rounded-full font-medium hover:bg-purple-600 transition">
+                        View Tutorials
+                    </a>
+                    <a href="contact-us.html" class="border border-white px-6 py-3 rounded-full font-medium hover:bg-white hover:text-purple-600 transition">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-purple-400 rounded-full opacity-30 animate-pulse"></div>
+                    <div class="absolute inset-4 bg-fuchsia-400 rounded-full opacity-30 animate-pulse delay-300"></div>
+                    <div class="absolute inset-8 glass-card rounded-full flex items-center justify-center">
+                        <img src="images/solodev.jpeg" 
+                             class="w-64 h-64 rounded-full" alt="Developer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="container mx-auto px-4 py-16">
+        <div class="glass-card p-8 md:p-12 rounded-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">My Mission</h2>
+            <p class="text-xl text-center max-w-3xl mx-auto leading-relaxed">
+                I created WebDevTuts to help beginners learn web development through practical, interactive examples. 
+                Each tutorial comes with <span class="font-bold text-purple-200">real source code</span> and 
+                <span class="font-bold text-purple-200">live demos</span> that you can play with, experiment on, 
+                and truly understand how things work.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <div class="w-16 h-16 glass-card rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Real Source Code</h3>
+                    <p>Every project includes complete source code that you can download, modify, and learn from.</p>
+                </div>
+                
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <div class="w-16 h-16 glass-card rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-play-circle text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Live Demos</h3>
+                    <p>Interact with every project before even downloading the code to see how it works in action.</p>
+                </div>
+                
+                <div class="glass-card p-6 rounded-xl text-center">
+                    <div class="w-16 h-16 glass-card rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Beginner Friendly</h3>
+                    <p>Step-by-step explanations that break down complex concepts into easy-to-understand lessons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <!-- <section class="container mx-auto px-4 py-16">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="glass-card p-6 rounded-xl">
+                <div class="text-4xl font-bold mb-2">25+</div>
+                <div class="opacity-80">Tutorials</div>
+            </div>
+            <div class="glass-card p-6 rounded-xl">
+                <div class="text-4xl font-bold mb-2">18k</div>
+                <div class="opacity-80">Learners</div>
+            </div>
+            <div class="glass-card p-6 rounded-xl">
+                <div class="text-4xl font-bold mb-2">100%</div>
+                <div class="opacity-80">Free Content</div>
+            </div>
+            <div class="glass-card p-6 rounded-xl">
+                <div class="text-4xl font-bold mb-2">5★</div>
+                <div class="opacity-80">Rating</div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Call to Action -->
+    <section class="container mx-auto px-4 py-16 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Learning?</h2>
+        <p class="text-xl max-w-2xl mx-auto mb-10">
+            Explore my collection of tutorials and take your web development skills to the next level.
+        </p>
+        <a href="index.html" class="glass-card px-8 py-4 rounded-full text-xl font-bold inline-block hover:bg-purple-600 transition">
+            Browse All Tutorials
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="glass-card mx-4 lg:mx-20 mt-8 mb-4 rounded-2xl p-8">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold">WebDevTuts</h3>
+                    <p class="opacity-80">Teaching web development, one tutorial at a time.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-2xl hover:text-purple-200 transition"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-2xl hover:text-purple-200 transition"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-2xl hover:text-purple-200 transition"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-2xl hover:text-purple-200 transition"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm opacity-70">
+                <p>© 2023 WebDevTuts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer> -->
+</body>
+</html>
