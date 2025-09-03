@@ -1,13 +1,11 @@
 const phrases = [
     ["We Are", "innovators"],
     ["We Build", "Greatness Together"],
-    ["Coding Website", "Name"],
     ["Don't Work Hard", "Work Smart"],
     ["Less time", "More productivity."],
-    ["Coding Website", "Name"],
     ["Let's Choose", "Our Destiniy"],
     ["Let's Choose", "To learn With..."],
-    ["Coding Website", "Name"]
+    ["Awesome", "Web Developers"]
   ];
 
   const part1El = document.getElementById("part1");
